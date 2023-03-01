@@ -1,0 +1,19 @@
+<?php 
+namespace App\Transformers;
+
+use App\Models\tbl_komcek;
+use League\Fractal\TransformerAbstract;
+
+class TblCommcekTransformer extends TransformerAbstract
+{
+    public function transform(tbl_komcek $data){
+    return [
+        'data_id' => (int) $data->id,
+        'sku' => $data->sku,
+        'md' => $data->md,
+        'toko' => $data->toko,       
+        'harga_jual' => $data->harga_jual
+        
+    ];
+}
+} 
