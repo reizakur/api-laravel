@@ -43,6 +43,22 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        //contoh database 
+        '127.0.0.1' => [
+            'driver' => 'pgsql',
+            'host' => env('127.0.0.1', ''),
+            'port' => env('8000',),
+            'database' => env('rmy_projek', ''),
+            'username' => env('root'),
+            'password' => env('root'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'reconcile',
+            'sslmode' => 'prefer',
+        ],
+
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
