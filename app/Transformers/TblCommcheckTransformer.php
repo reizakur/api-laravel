@@ -3,8 +3,8 @@ namespace App\Transformers;
 
 use App\Models\tbl_komcek;
 use League\Fractal\TransformerAbstract;
-
-class TblCommcekTransformer extends TransformerAbstract
+//ini kia
+class TblCommcheckTransformer extends TransformerAbstract
 {
     public function transform(tbl_komcek $data){
     return [
@@ -12,8 +12,7 @@ class TblCommcekTransformer extends TransformerAbstract
         'sku' => $data->sku,
         'md' => $data->md,
         'toko' => $data->toko,       
-        'harga_jual' => $data->harga_jual
-        
+        'harga_jual' => $data->harga_jual        
     ];
 }
 } 
